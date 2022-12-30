@@ -1,0 +1,16 @@
+@media only screen and (min-width: 426px) {
+
+    .bg-black {
+        background: url("../img/background/black-tablet.svg");
+        background-repeat: no-repeat;
+	    background-attachment: fixed;
+    }
+
+    .bg-violet {
+        height: 1000px;
+    }
+
+    .violet-1 {
+        top: 250px;
+    }
+}

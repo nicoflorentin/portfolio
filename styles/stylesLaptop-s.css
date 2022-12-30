@@ -1,0 +1,168 @@
+@media only screen and (min-width: 1000px) {
+
+    /* * {
+        border: 1px solid red;
+    } */
+
+    .bg-black {
+        background: url("../img/background/black-laptop-l.svg");
+        background-repeat: no-repeat;
+	    background-attachment: fixed;
+        height: 2200px;
+    }
+
+    .violet-1 {
+        top: 550px;
+        height: 1200px;
+    }
+
+    .container {
+        --font-xl: 6rem;
+        --font-l: 3rem;
+        --font-m: 1.9rem;
+        --font-s: 1.3rem;
+        --font-xs: .5rem;
+
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10vw;
+    }
+
+    .navBar__logo {
+        display: flex;
+        align-items: center;
+        margin-left: 6vw;
+        font-size: var(--font-l);
+    }
+
+    .main {
+        width: 90%;
+        max-width: 815px;
+        margin-top: 100px;
+    }
+
+    .main__body {
+        align-items: start;
+    }
+
+    .main__brief p {
+        font-size: var(--font-m);
+        letter-spacing: 2px;
+        line-height: 31px;
+        margin: 20px 10px 0 0;
+    }
+
+
+    .main__profilePic img {
+        width: 303px;
+    }
+
+    .title, h2 {
+        margin: 100px 0 40px 0;
+    }
+
+    .socialContainer {
+        display: initial;
+    }
+
+    .social__footer {
+        padding: 20px 20px;
+    }
+
+    .aboutMeSection {
+        padding: 0;
+    }
+
+    .aboutMe__img {
+        display: inherit;
+    }
+
+    .aboutMe__descriptionContainer {
+        max-width: 600px;
+        padding: 30px;
+    }
+
+    .aboutMe__description {
+        font-size: var(--font-m);
+        line-height: 30px;
+        letter-spacing: 2.1px;
+        font-weight: normal;
+    }
+
+    .aboutMe__description p {
+        max-width: inherit;
+        margin:30px;
+    }
+    
+    .skillsSection {
+        padding: 0 ;
+        max-width: inherit;
+    }
+
+    .skills__img {
+        display: inherit;
+        height: 300px;
+    }
+
+    .skills__title {
+        margin-top: 40px;
+    }
+
+    .skillsContainer {
+        max-width: 514px;
+        border: 30px solid var(--my-violet)
+    }
+
+    .skills__boxContainer {
+        margin-bottom: 40px;
+    }
+
+    .box {
+        width: 165px;
+        height: 68px;
+        margin: 10px 5px;
+        font-weight: bold;
+        font-size: var(--font-m);
+    }
+
+    .box img {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    
+        z-index: 3;
+    }
+
+    .floatingBar {
+        bottom: 4vh;
+        margin-left: 2vw;
+        height: 180px;
+        width: 45px;
+    }
+
+    .floatingBar img {
+        width: 35px;
+    }
+
+    .scrollUpButton {
+        right: 50px;
+    }
+
+    .scrollUpButton img {
+        width: 60px;
+    }
+
+    .footerContainer p {
+       margin-top: 180px;
+       font-size: var(--font-l);
+    }
+
+    header {
+        font-size: var(--font-l);
+    }
+}

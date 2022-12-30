@@ -1,8 +1,5 @@
 import anime from 'animejs/lib/anime.es.js';
+import { scrollTo, scrollIntoView } from 'scroll-js';
 
-document.getElementById('app').innerHTML = `<h1 id='mydiv'>Hola</h1>`
-
-anime({
-    targets: '#mydiv',
-    translateY: 250
-  });
+console.log(anime)
+console.log(scrollTo, scrollIntoView)

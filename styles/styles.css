@@ -1,0 +1,421 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* border: 1px solid red; */
+}
+
+:root {
+    font-size: 62.5%;
+	
+}
+
+.allContainer {
+    font-family: LocalConsolas;
+    --font-xl: 2rem;
+    --font-l: 1.3rem;
+    --font-m: .9rem;
+    --font-s: .7rem;
+	--font-xs: .5rem;
+    
+    --my-black: #1C1C1C;
+    --my-violet: #AE8FDB;
+    --my-green: #93C572;
+}
+
+.unselectable {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+  
+	/*
+	  Introduced in IE 10.
+	  See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+	*/
+	-ms-user-select: none;
+	user-select: none;
+ }
+
+ .button {
+	cursor: pointer;
+ }
+
+/* NAVBAR */
+
+.navBar {
+	padding-top: 5px;
+}
+
+.navBar__logo {
+    display: none;
+}
+
+.navBar__links {
+	display: flex;
+	justify-content: center;
+}
+
+.navBar__links li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0.5rem 1rem;
+	margin: 5vh 2vw;
+	font-size: var(--font-m);
+	font-weight: bold;
+	color: var(--my-violet);
+	cursor: pointer;
+	position: relative;
+	background-color: var(--my-green);
+	z-index: 0;
+}
+
+.navBar__links li::after {
+	content: "";
+	position: absolute;
+	background-color: var(--my-black);
+	height: 100%;
+	width: 100%;
+	top: -5px;
+	left: -5px;
+
+	z-index: -1;
+	transition: 0.1s;
+}
+
+.navBar__links li:hover::after {
+	top: 5px;
+	left: 5px;
+}
+
+/* MAIN */
+
+.main {
+	width: 80vw;
+	max-width: 300px;
+	margin: auto;
+}
+
+h1 {
+    font-size: var(--font-xl);
+    font-weight: normal;
+	letter-spacing: 2px;
+	color: var(--my-green);
+	margin-top: 16px;
+}
+
+.main__description {
+	font-size: var(--font-l);
+	color: var(--my-green);
+	margin-top: 3px;
+}
+
+.main__body {
+	display: flex;
+	align-items: center;
+}
+
+.main__brief p {
+	font-weight: lighter;
+	color: var(--my-violet);
+	font-size: var(--font-m);
+	letter-spacing: 0.5px;
+	line-height: 12.5px;
+	margin-right: 10px;
+
+	margin-bottom: 70px;
+}
+
+.main__profilePic > img {
+	width: 150px;
+}
+
+.counterText {
+	font-size: var(--font-s);
+}
+
+
+/* FIXED ASIDE BAR */
+
+.floatingBar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	position: fixed;
+	bottom: 2vh;
+	margin-left: 2vw;
+
+	background-color: white;
+	height: 100px;
+	width: 25px;
+	border-radius: 25px;
+}
+
+.floatingBar img {
+	color: var(--my-black);
+	width: 20px;
+}
+
+.floatingBar img:hover {
+	color: var(--my-black);
+	width: 20px;
+	scale: 2;
+}
+
+
+
+/* ABOUT ME  */
+
+.aboutMeSection {
+	display: flex;
+	padding: 0 10%;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.aboutMe__title {
+	margin-top: 70px;
+}
+
+.title, h2 {
+	text-align: center;
+	font-size: var(--font-l);
+	color: var(--my-green);
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.aboutMe__img {
+	height: 300px;
+}
+
+.aboutMe__descriptionContainer {
+    margin: auto;
+	background-color: var(--my-violet);
+	width: 80vw;
+	max-width: 300px;
+	padding: 10px;
+}
+
+.aboutMe__description {
+	color: var(--my-violet);
+	font-size: var(--font-m);
+	line-height: 15px;
+	letter-spacing: .08em;
+	padding: 10px;
+	font-weight: bold;
+
+	display: flex;
+	justify-content: center;
+
+	background-color: var(--my-black);
+}
+
+.aboutMe__description p {
+	max-width: 216px;
+}
+
+.socialContainer {
+	padding: 25px 25px 0px 25px;
+	background-color: var(--my-violet);
+	/* border: 1px solid black; */
+	display: none;
+}
+
+.socialText {
+	font-size: var(--font-m);
+}
+
+.social--nobg {
+	background-color: inherit;
+}
+
+.social__footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5px;
+	background-color: var(--my-violet);
+}
+
+#likeContainer {
+	display: flex;
+	align-items: center;
+}
+
+.heart {
+	background-color: inherit;
+	border: 0;
+	margin-left: 0.9rem;
+}
+
+/* SKILLS */
+
+.skillsSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	max-width: 300px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.skills__img {
+	width: 300px;
+    display: none;
+}
+
+.skillsContainer {
+	border: 10px solid var(--my-violet);
+	width: 80vw;
+	background-color: var(--my-black);
+}
+
+.skills__title {
+	text-align: center;
+	margin-top: 5%;
+}
+
+.skills__boxContainer {
+	width: 90%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin: 16px auto;
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+	width: 95px;
+	height: 40px;
+	margin: 10px 5px;
+	background-color: var(--my-green);
+	color: var(--my-violet);
+	font-size: var(--font-m);
+	font-weight: normal;
+
+	z-index: 3;
+}
+
+.box p {
+	z-index: 3;
+}
+
+.box img {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+
+	z-index: 3;
+}
+
+.box::after {
+	content: "";
+	position: absolute;
+	background-color: var(--my-black);
+	height: 100%;
+	width: 100%;
+	top: -5px;
+	left: -5px;
+
+	z-index: -1;
+	transition: 0.1s;
+}
+
+.box:hover::after {
+	top: 5px;
+	left: 5px;
+}
+
+.footerContainer p {
+    text-align: center;
+	font-size: var(--font-m);
+	color: var(--my-black);
+	margin-top: 20px;
+}
+
+.scrollUpButton {
+	position: fixed;
+	bottom: 50px;
+	right: 10px;
+
+	display: none;
+}
+
+.scrollUpButton img {
+	width: 30px;
+}
+
+/* BACKGROUND  */
+
+.bg-black {
+	position: absolute;
+	background: url("../img/background/black-mobile.svg");
+	height: 1000px;
+	width: 100%;
+	z-index: -5;
+	margin: auto;
+
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.bg-violet {
+	position: absolute;
+	background: url("../img/background/violet-mobile.svg");
+	height: 600px;
+	width: 100%;
+	z-index: -5;
+
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+
+}
+
+.violet-1 {
+	top: 110px;
+}
+
+html {
+	scrollbar-width: normal;
+	scrollbar-color: red;
+}
+
+html::-webkit-scrollbar {
+	width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+	background-color: #1C1C1C;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+	background-color: #464646;
+
+}
+
+html::-webkit-scrollbar-track {
+	background-color: white;
+}
+
+
+header {
+	width: 100%;
+	color: white;
+	font-size: var(--font-s);
+	text-align: center;
+	background-color: darkred;	
+	position: fixed;
+	z-index: 10;
+}
+
+/* img {
+	pointer-events: none
+} */
