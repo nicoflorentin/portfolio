@@ -1,4 +1,4 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp, setLogLevel } from "firebase/app";
 import {
 	getFirestore,
 	doc,
@@ -6,6 +6,10 @@ import {
 	updateDoc,
 	onSnapshot
 } from "firebase/firestore";
+
+import mainLogo from'../img/heart.svg';
+
+console.log(mainLogo)
 
 const firebaseConfig = {
 	apiKey: "AIzaSyCfd3SatHBUIE1IOkMIchKQiuY-PKnaFic",
@@ -99,7 +103,7 @@ buttons.forEach((params) => {
 				[params.collection]: increment(-1),
 			}).then(() => {
 				console.log(`posted dislike in: ${params.collection}`);
-				image.src = "./img/heart.svg";
+				image.src = mainLogo // modificacion
 				params.liked = false;
 				button.disabled = false;
 			});
