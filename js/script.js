@@ -1,5 +1,4 @@
-import anime from 'animejs/lib/anime.es.js';
-import { scrollTo, scrollIntoView } from 'scroll-js';
+// window.onload = () => {
+//     alert('load')
+// }
 
-console.log(anime)
-console.log(scrollTo, scrollIntoView)
