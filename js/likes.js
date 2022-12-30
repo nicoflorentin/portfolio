@@ -7,9 +7,8 @@ import {
 	onSnapshot
 } from "firebase/firestore";
 
-import mainLogo from'../img/heart.svg';
-
-console.log(mainLogo)
+import URL_heart from'../img/heart.svg';
+import URL_heartRed from'../img/heart-red.svg';
 
 const firebaseConfig = {
 	apiKey: "AIzaSyCfd3SatHBUIE1IOkMIchKQiuY-PKnaFic",
@@ -61,9 +60,9 @@ const updateIcon = (params) => {
 	params.liked = loadedState;
 	console.log("loaded state", loadedState);
 	if (loadedState) {
-		document.getElementById(params.heart_id).src = "./img/heart-red.svg";
+		document.getElementById(params.heart_id).src = URL_heartRed;
 	} else {
-		document.getElementById(params.heart_id).src = "./img/heart.svg";
+		document.getElementById(params.heart_id).src = URL_heart;
 	}
 };
 
@@ -103,7 +102,7 @@ buttons.forEach((params) => {
 				[params.collection]: increment(-1),
 			}).then(() => {
 				console.log(`posted dislike in: ${params.collection}`);
-				image.src = mainLogo // modificacion
+				image.src = URL_heart
 				params.liked = false;
 				button.disabled = false;
 			});
@@ -113,7 +112,7 @@ buttons.forEach((params) => {
 				[params.collection]: increment(1),
 			}).then(() => {
 				console.log(`posted like in: ${params.collection}`);
-				image.src = "./img/heart-red.svg";
+				image.src = URL_heartRed
 				params.liked = true;
 				button.disabled = false;
 			});
