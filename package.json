@@ -12,7 +12,9 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
+    "firebase": "^9.13.0",
     "gh-pages": "^4.0.0",
-    "scroll-js": "^3.5.2"
+    "scroll-js": "^3.5.2",
+    "siiimple-toast": "^3.1.7"
   }
 }

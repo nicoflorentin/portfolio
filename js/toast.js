@@ -1,5 +1,7 @@
-const projecsBtn = document.getElementById('projects-btn').addEventListener('click', () => {
-    siiimpleToast.message('💻 Projects section is under development but you can check my GitHub clicking in the sidebar 💻', {
+import toast from 'siiimple-toast';
+
+document.getElementById('projects-btn').addEventListener('click', () => {
+    toast.message('💻 Projects section is under development but you can check my GitHub clicking in the sidebar 💻', {
         container: 'body',
         class: 'siiimpleToast',
         position: 'bottom|center',
