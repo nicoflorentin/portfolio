@@ -2,13 +2,165 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/portfolio/assets/index-0295f3b8.js"></script>
+    
+    
+    
+    
+    
+    
+    <!-- toast styles -->
+    <link href="https://cdn.jsdelivr.net/npm/siiimple-toast/dist/style.css" rel="stylesheet" />
+    <title>Nicolás - a Front End Developer</title>
+    <script type="module" crossorigin src="/portfolio/assets/index-b94cb043.js"></script>
+    <link rel="stylesheet" href="/portfolio/assets/index-99ffdba8.css">
   </head>
-  <body>
-    <div id="app">My App</div>
+  <body id="body" class="allContainer unselectable">
+    <div class="bg-black"></div>
+    <div class="bg-violet violet-1"></div>
+    <header>💻 - This site is under development - 💻</header>
+  
+    <div class="container">
+      <div class="navBar">
+        <h1 class="navBar__logo">
+          <span class="txt-rotate" data-period="1000"
+            data-rotate='["¡Bienvenido!", "Welcome!", "Willkommen!", "Benvenuti!", "Bienvenue!"]'>
+          </span>
+        </h1>
+        <ul class="navBar__links">
+          <li id="aboutMe-btn">&lt;AboutMe /&gt;</li>
+          <li id="skills-btn">&lt;Skills /&gt;</li>
+          <li id="projects-btn">&lt;Projects /&gt;</li>
+        </ul>
+      </div>
+      <section class="main">
+        <h1 class="main__name">Nicolás Florentín</h1>
+        <div class="main__description">front-end-dev</div>
+        <div class="main__body">
+          <div class="main__brief">
+            <p>
+              a Front-end developer in training living in Buenos
+              Aires, Argentina. Currently specializing in React Js
+              and aiming to become full stack
+            </p>
+          </div>
+          <div class="main__profilePic">
+            <img id="profilePicture" class="profilePic" src="/portfolio/assets/profile_pic-8c178476.png" alt="profile_pic" />
+            <div class="social__footer socialText">
+              <p>profile.png</p>
+              <div id="likeContainer">
+                <span id="profileCounter" class="counterText">0</span>
+                <button class="heart" id="profileBtn"><img id="profileImg" style="width: 24px" src="/portfolio/assets/heart-dc385279.svg" alt="heart"></button>
+                <div class="loading"></div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="aboutMe">
+        <h2 class="aboutMe__title title">&lt;AboutMe /&gt;</h2>
+        <div class="aboutMeSection">
+          <div id='aboutLeft' class="socialContainer">
+            <img id="cat1" class="aboutMe__img" src="/portfolio/assets/catPC-4bcfae17.gif" alt="me-developing" />
+            <div class="social__footer socialText">
+              <p>dev_cat.png</p>
+              <div id="likeContainer">
+                <span id="aboutCounter" class="counterText">0</span>
+                <button class="heart" id="aboutBtn"><img id="aboutImg" style="width: 24px" src="/portfolio/assets/heart-dc385279.svg" alt="heart"></button>
+                <div id="loading"></div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="aboutMeContainer">
+            <div class="aboutMe__descriptionContainer">
+              <div class="aboutMe__description">
+                <p>
+                  &lt;p&gt;<br />
+                  A web developer specialized in Front-End 🎨💻, I
+                  use Figma to digitalize my projects and then
+                  writing the required code so it is perfectly
+                  interpreted by the browser 🧠🚀. I'm also very
+                  passionate about CSS and all the potential it
+                  offers when works with JS together 💪
+                  <br />&lt;/p&gt;
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section id='skills' class="skillsSection">
+        <div class="skillsContainer">
+          <h2 class="skills__title title">&lt;Skills /&gt;</h2>
+          <div class="skills__boxContainer">
+            <div class="box">
+              <img src="/portfolio/assets/react-dc030209.svg" alt="react" />
+              <p>React</p>
+            </div>
+            <div class="box">
+              <img src="/portfolio/assets/styled-new-68fbb585.svg" alt="styled-components" />
+              <p>Styled<br />Components</p>
+            </div>
+            <div class="box">
+              <img src="/portfolio/assets/HTML5-9c1b8876.svg" alt="html" />
+              <p>HTML</p>
+            </div>
+            <div class="box">
+              <img src="/portfolio/assets/github-white-62578345.svg" alt="github" />
+              <p>GitHub</p>
+            </div>
+            <div class="box">
+              <img src="/portfolio/assets/CSS-42f5dce2.svg" alt="css" />
+              <p>CSS</p>
+            </div>
+            <div class="box">
+              <img src="/portfolio/assets/figma-c9fed62f.svg" alt="figma" />
+              <p>Figma</p>
+            </div>
+            <div class="box">
+              <img src="/portfolio/assets/logo-javascript-35328c60.svg" alt="js" />
+              <p>JavaScript</p>
+            </div>
+            <div class="box">
+              <img src="/portfolio/assets/bootstrap-bde06156.svg" alt="bootstrap" />
+              <p>Bootstrap</p>
+            </div>
+            <div class="box">
+              <img src="/portfolio/assets/firebase-b15c48af.svg" alt="firebase" />
+              <p>Firebase</p>
+            </div>
+          </div>
+        </div>
+        <div id='skillsRight' class="socialContainer">
+          <img id="cat2" class="skills__img" src="/portfolio/assets/hobbes-mouse-fe89e073.gif" alt="me-skills" />
+          <div class="social__footer socialText">
+            <p>cat_playing.png</p>
+            <div id="likeContainer">
+              <span id="skillsCounter" class="counterText">0</span>
+              <button class="heart" id="skillsBtn"><img id="skillsImg" style="width: 24px" src="/portfolio/assets/heart-dc385279.svg" alt="heart"></button>
+              <div id="loading"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <aside id='floatingBar' class="floatingBar">
+      <a href="mailto:nicogrunger@hotmail.com"><img src="/portfolio/assets/mail-100-a330608a.svg" alt="mailIcon" /></a>
+      <a href="https://www.linkedin.com/in/nicol%C3%A1s-florent%C3%ADn-a3771217a/"><img src="/portfolio/assets/linkedin-100-f411750f.svg"
+          alt="linkedinIcon" /></a>
+      <a href="https://github.com/nicoflorentin"><img src="/portfolio/assets/github-100-a8e7f190.svg" alt="githubIcon" /></a>
+    </aside>
+    <div class="scrollUpButton button">
+      <img src="/portfolio/assets/upArrow-bc00a1b0.svg" alt="scrollup">
+    </div>
+    <footer id="PageDescription" class="footerContainer">
+      <p>Nicolás Florentín - Buenos Aires - 2022</p>
+    </footer>
+
+
+    
+    <!-- likes -->
     
     
   </body>
