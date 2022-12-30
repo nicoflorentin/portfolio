@@ -159,8 +159,7 @@ h1 {
 
 .floatingBar img:hover {
 	color: var(--my-black);
-	width: 20px;
-	scale: 2;
+	scale: 1.1;
 }
 
 
