@@ -96,23 +96,23 @@ buttons.forEach((params) => {
 		button.disabled = true;
 		counter.innerHTML = "wait...";
 		const likesRef = doc(db, "likes-counter", "likes");
-		// post dislike
 		if (params.liked) {
+			// post dislike
 			await updateDoc(likesRef, {
 				[params.collection]: increment(-1),
 			}).then(() => {
-				console.log(`posted dislike in: ${params.collection}`);
 				image.src = URL_heart
+				console.log(`posted dislike in: ${params.collection}`);
 				params.liked = false;
 				button.disabled = false;
 			});
-			// post like
 		} else {
+			// post like
 			await updateDoc(likesRef, {
 				[params.collection]: increment(1),
 			}).then(() => {
-				console.log(`posted like in: ${params.collection}`);
 				image.src = URL_heartRed
+				console.log(`posted like in: ${params.collection}`);
 				params.liked = true;
 				button.disabled = false;
 			});

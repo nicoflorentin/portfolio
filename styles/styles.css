@@ -36,7 +36,7 @@
 	user-select: none;
  }
 
- .button {
+ .button:hover {
 	cursor: pointer;
  }
 
@@ -332,11 +332,15 @@ h1 {
 	left: 5px;
 }
 
+.footerContainer {
+	display: block;
+	
+}
+
 .footerContainer p {
     text-align: center;
 	font-size: var(--font-m);
 	color: var(--my-black);
-	margin-top: 20px;
 }
 
 .scrollUpButton {
