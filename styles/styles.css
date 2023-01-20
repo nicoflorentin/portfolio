@@ -40,6 +40,14 @@
 	cursor: pointer;
  }
 
+ .rounded {
+	border-radius: 2rem;
+ }
+
+ .rounded::after {
+	border-radius: 2rem;
+ }
+
 /* NAVBAR */
 
 .navBar {
