@@ -19,7 +19,6 @@ skills_right.style.opacity = '0';
 
 const diagonalAnimate = (el_left, el_right) => {
 
-    console.log('animate!')
     anime({
         targets: [el_left, el_right],
         opacity: 1,

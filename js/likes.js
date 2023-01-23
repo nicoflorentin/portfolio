@@ -58,7 +58,6 @@ const updateIcon = (params) => {
 	const getLocal = localStorage.getItem(params.collection, params.liked);
 	const loadedState = JSON.parse(getLocal);
 	params.liked = loadedState;
-	console.log("loaded state", loadedState);
 	if (loadedState) {
 		document.getElementById(params.heart_id).src = URL_heartRed;
 	} else {
@@ -80,7 +79,6 @@ buttons.forEach((params) => {
 	
 	const postPicture = document.getElementById(params.picture_id);
 	postPicture.addEventListener("dblclick", () => {
-		console.log('doubled!')
 		postData();
 	});
 
@@ -102,7 +100,6 @@ buttons.forEach((params) => {
 				[params.collection]: increment(-1),
 			}).then(() => {
 				image.src = URL_heart
-				console.log(`posted dislike in: ${params.collection}`);
 				params.liked = false;
 				button.disabled = false;
 			});
@@ -112,16 +109,12 @@ buttons.forEach((params) => {
 				[params.collection]: increment(1),
 			}).then(() => {
 				image.src = URL_heartRed
-				console.log(`posted like in: ${params.collection}`);
 				params.liked = true;
 				button.disabled = false;
 			});
 		}
 
 		localStorage.setItem(params.collection, params.liked);
-		console.log(
-			`saved: ${params.collection} /// like: ${params.liked}`
-		);
 	};
 });
 
