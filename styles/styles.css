@@ -6,47 +6,46 @@
 }
 
 :root {
-    font-size: 62.5%;
-	
+	font-size: 62.5%;
 }
 
 .allContainer {
-    font-family: LocalConsolas;
-    --font-xl: 2rem;
-    --font-l: 1.3rem;
-    --font-m: .9rem;
-    --font-s: .7rem;
-	--font-xs: .5rem;
-    
-    --my-black: #1C1C1C;
-    --my-violet: #AE8FDB;
-    --my-green: #93C572;
+	font-family: LocalConsolas;
+	--font-xl: 2rem;
+	--font-l: 1.3rem;
+	--font-m: 0.9rem;
+	--font-s: 0.7rem;
+	--font-xs: 0.5rem;
+
+	--my-black: #1c1c1c;
+	--my-violet: #ae8fdb;
+	--my-green: #93c572;
 }
 
 .unselectable {
 	-moz-user-select: -moz-none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
-  
+
 	/*
 	  Introduced in IE 10.
 	  See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
 	*/
 	-ms-user-select: none;
 	user-select: none;
- }
+}
 
- .button:hover {
+.button:hover {
 	cursor: pointer;
- }
+}
 
- .rounded {
+.rounded {
 	border-radius: 2rem;
- }
+}
 
- .rounded::after {
+.rounded::after {
 	border-radius: 2rem;
- }
+}
 
 /* NAVBAR */
 
@@ -55,7 +54,7 @@
 }
 
 .navBar__logo {
-    display: none;
+	display: none;
 }
 
 .navBar__links {
@@ -104,8 +103,8 @@
 }
 
 h1 {
-    font-size: var(--font-xl);
-    font-weight: normal;
+	font-size: var(--font-xl);
+	font-weight: normal;
 	letter-spacing: 2px;
 	color: var(--my-green);
 	margin-top: 16px;
@@ -141,7 +140,6 @@ h1 {
 	font-size: var(--font-s);
 }
 
-
 /* FIXED ASIDE BAR */
 
 .floatingBar {
@@ -170,8 +168,6 @@ h1 {
 	scale: 1.1;
 }
 
-
-
 /* ABOUT ME  */
 
 .aboutMeSection {
@@ -185,7 +181,8 @@ h1 {
 	margin-top: 70px;
 }
 
-.title, h2 {
+.title,
+h2 {
 	text-align: center;
 	font-size: var(--font-l);
 	color: var(--my-green);
@@ -198,7 +195,7 @@ h1 {
 }
 
 .aboutMe__descriptionContainer {
-    margin: auto;
+	margin: auto;
 	background-color: var(--my-violet);
 	width: 80vw;
 	max-width: 300px;
@@ -209,7 +206,7 @@ h1 {
 	color: var(--my-violet);
 	font-size: var(--font-m);
 	line-height: 15px;
-	letter-spacing: .08em;
+	letter-spacing: 0.08em;
 	padding: 10px;
 	font-weight: bold;
 
@@ -271,7 +268,7 @@ h1 {
 
 .skills__img {
 	width: 300px;
-    display: none;
+	display: none;
 }
 
 .skillsContainer {
@@ -340,13 +337,33 @@ h1 {
 	left: 5px;
 }
 
+.projects {
+	display: block;
+	height: 100vh;
+	padding-top: 20%;
+
+}
+
+.projects__container {
+	margin: auto;
+	height: 80vh;
+	width: 80vw;
+	max-width: 300px;
+	background-color: var(--my-violet);
+	padding: 10px;
+}
+
+.projects__description {
+	background: var(--my-black);
+	height: 100%;
+}
+
 .footerContainer {
 	display: block;
-	
 }
 
 .footerContainer p {
-    text-align: center;
+	text-align: center;
 	font-size: var(--font-m);
 	color: var(--my-black);
 }
@@ -387,7 +404,6 @@ h1 {
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
-
 }
 
 .violet-1 {
@@ -404,25 +420,23 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-	background-color: #1C1C1C;
+	background-color: #1c1c1c;
 }
 
 html::-webkit-scrollbar-thumb:hover {
 	background-color: #464646;
-
 }
 
 html::-webkit-scrollbar-track {
 	background-color: white;
 }
 
-
 header {
 	width: 100%;
 	color: white;
 	font-size: var(--font-s);
 	text-align: center;
-	background-color: darkred;	
+	background-color: darkred;
 	position: fixed;
 	z-index: 10;
 }
